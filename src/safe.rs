@@ -7,10 +7,10 @@ use crate::{
 use hex_literal::hex;
 use tiny_keccak::{Hasher as _, Keccak};
 
-const PROXY_FACTORY: Address = address!("a6B71E26C5e0845f74c812102Ca7114b6a896AB2");
+const PROXY_FACTORY: Address = address!("C22834581EbC8527d974F8a1c97E1bEA4EF910BC"); // L2
 const PROXY_INIT_CODE_DIGEST: [u8; 32] =
-    hex!("56e3081a3d1bb38ed4eed1a39f7729c3cc77c7825794c15bbf326f3047fd779c");
-const SINGLETON: Address = address!("d9Db270c1B5E3Bd161E8c8503c55cEABeE709552");
+    hex!("ea577b319e453ad8c9c606cacfe42c5750522aa0379d419931cb34698e3630e0"); // L2
+const SINGLETON: Address = address!("fb1bffC9d739B8D520DaF37dF666da4C687191EA"); // L2
 const FALLBACK_HANDLER: Address = address!("f48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4");
 
 /// Safe deployment for computing deterministic addresses.
